@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
         errorMessages.push('Emailfield must contain @.');
     }
     if (inputPassword1.value === '' || inputPassword1.value == null){
-        errorMessages.push('Enter a password.')
+        errorMessages.push('Enter a password. Minimum 1 capital letter, 1 number, 8 character')
     }
     errors.innerHTML = errorMessages.join(', ')
     return false;
